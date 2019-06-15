@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <script>
+        // Object.assign({}, obj1, obj2, ... objN)
+        let obj1 = {fName: 'Perdus', lName: 'Dechirac'};
+        let obj2 = {fName: 'Jean-Paul', foo: 'Bar', number: 25};
+        let mergeObj1 = Object.assign({}, obj1, obj2);
+        console.log(mergeObj1);
+        // ...spread for objects:
+        let mergeObj2 = {...obj1, ...obj2};
+        console.log(mergeObj2);
+        
+        // ... spread for arrays:
+        let arr1 = [1,2,3,222];
+        let arr2 = [20, 30, 40, 222];
+        let mergeArr = [...arr1, ...arr2];
+        console.log(mergeArr);
+        
+        // complex merge:
+        function merge(...objects) {
+            return [...objects];
+        }
+        console.log(merge(obj1, obj2));
+        const state = {
+            result:null,
+            searchTerm: 'query string'
+        }
+        console.log(state);
+        
+        const {searchTerm} = state;
+
+        console.log(searchTerm);
+        var arr4 = [1,2,3,4,5,6,7,35];
+        var num1 = 3;
+        var arr6 = arr4.filter(val => val != num1);
+        var arr5 = arr4.filter(val=> val =! num1);
+        console.log(arr5);
+        console.log(arr6);
+        
+        
+    </script>
+</body>
+</html>
