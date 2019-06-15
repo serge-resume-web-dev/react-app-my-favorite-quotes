@@ -1,4 +1,4 @@
-import { AUTH_SUCCESS, AUTH_LOGOUT, SET_USER_INFO, AUTH_ERROR  } from "../store/actions/authActions"
+import { AUTH_SUCCESS, AUTH_LOGOUT, SET_USER_INFO, AUTH_ERROR  } from "../actions/authActions"
 
 const initState = {}
 

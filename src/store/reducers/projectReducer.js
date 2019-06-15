@@ -1,4 +1,9 @@
-import { FETCH_PROJECTS_START, FETCH_PROJECTS_SUCCESS, FETCH_PROJECTS_ERROR, FETCH_PROJECTS_BY_ID, DELETE_PROJECT } from "./actions/projectActions"; 
+import { FETCH_PROJECTS_START, 
+  FETCH_PROJECTS_SUCCESS, 
+  FETCH_PROJECTS_ERROR, 
+  FETCH_PROJECTS_BY_ID, 
+  DELETE_PROJECT 
+} from "../actions/projectActions"; 
 
 const initState = {
   projects: [],
